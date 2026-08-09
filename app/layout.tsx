@@ -6,7 +6,7 @@ const manrope = Manrope({ variable: "--font-manrope", subsets: ["latin"] });
 const geist = Geist({ variable: "--font-geist", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nutrition-consultation.example"),
+  metadataBase: new URL("https://nutrition-clarity-consultation.banjadehimal05.chatgpt.site"),
   title: {
     default: "Nutrition Clarity | Free Consultation",
     template: "%s | Nutrition Clarity",
