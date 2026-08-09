@@ -16,12 +16,12 @@ export function CTAForm() {
     const whatsapp = String(form.get("whatsapp") || "").trim();
     const business = String(form.get("business") || "").trim();
 
-    if (!name) next.name = "कृपया आफ्नो पूरा नाम लेख्नुहोस्।";
-    if (!email) next.email = "कृपया सक्रिय इमेल ठेगाना लेख्नुहोस्।";
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) next.email = "कृपया मान्य इमेल ठेगाना लेख्नुहोस्।";
-    if (!whatsapp) next.whatsapp = "कृपया आफ्नो WhatsApp नम्बर लेख्नुहोस्।";
-    else if (!/^[+\d][\d\s()-]{6,}$/.test(whatsapp)) next.whatsapp = "कृपया मान्य WhatsApp नम्बर लेख्नुहोस्।";
-    if (!business) next.business = "कृपया आफ्नो व्यवसायको नाम लेख्नुहोस्।";
+    if (!name) next.name = "Please enter your full name.";
+    if (!email) next.email = "Please enter your active email.";
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) next.email = "Please enter a valid email address.";
+    if (!whatsapp) next.whatsapp = "Please enter your WhatsApp number.";
+    else if (!/^[+\d][\d\s()-]{6,}$/.test(whatsapp)) next.whatsapp = "Please enter a valid WhatsApp number.";
+    if (!business) next.business = "Please enter your business name.";
     return next;
   }
 
@@ -39,28 +39,28 @@ export function CTAForm() {
   return (
     <form className="consultation-form" noValidate onSubmit={handleSubmit}>
       <div className="form-heading">
-        <span>निःशुल्क परामर्श</span>
-        <h3>आफ्नो व्यवसायबारे केही जानकारी दिनुहोस्</h3>
-        <p>फारम भर्नुहोस्, त्यसपछि हामी तपाईंलाई सम्पर्क गर्नेछौँ।</p>
+        <span>Free consultation</span>
+        <h3>Tell us a little about your business</h3>
+        <p>Complete the form and we’ll take it from there.</p>
       </div>
 
       <div className="form-grid">
-        <FormField label="पूरा नाम" name="name" placeholder="आफ्नो पूरा नाम लेख्नुहोस्" error={errors.name} />
-        <FormField label="सक्रिय इमेल" name="email" type="email" placeholder="आफ्नो सक्रिय इमेल लेख्नुहोस्" error={errors.email} />
-        <FormField label="WhatsApp नम्बर" name="whatsapp" type="tel" placeholder="आफ्नो WhatsApp नम्बर लेख्नुहोस्" error={errors.whatsapp} />
-        <FormField label="व्यवसायको नाम" name="business" placeholder="आफ्नो व्यवसायको नाम लेख्नुहोस्" error={errors.business} />
-        <FormField label="वेबसाइट वा Facebook URL" name="website" type="url" placeholder="वेबसाइट वा Facebook पेजको URL लेख्नुहोस्" optional />
+        <FormField label="Full Name" name="name" placeholder="Enter your full name" error={errors.name} />
+        <FormField label="Active Email" name="email" type="email" placeholder="Enter your active email" error={errors.email} />
+        <FormField label="WhatsApp Number" name="whatsapp" type="tel" placeholder="Enter your WhatsApp number" error={errors.whatsapp} />
+        <FormField label="Business Name" name="business" placeholder="Enter your business name" error={errors.business} />
+        <FormField label="Website or Facebook URL" name="website" type="url" placeholder="Enter your website or Facebook page URL" optional />
         <label className="field field-full">
-          <span>तपाईं अरू केही भन्न चाहनुहुन्छ? <small>ऐच्छिक</small></span>
-          <textarea name="message" placeholder="आफ्नो व्यवसाय, ग्राहक वा हालको चुनौतीबारे बताउनुहोस्" rows={4} />
+          <span>Anything You Want to Say <small>Optional</small></span>
+          <textarea name="message" placeholder="Tell us about your business, clients, or current challenge" rows={4} />
         </label>
       </div>
 
       <button className="button button-primary form-button" disabled={submitting} type="submit">
-        {submitting ? "तपाईंको अनुरोध पठाइँदैछ…" : "निःशुल्क परामर्श बुक गर्नुहोस्"}
+        {submitting ? "Sending your request…" : "Book Free Consultation"}
         {!submitting && <span aria-hidden="true">→</span>}
       </button>
-      <p className="trust-line"><span aria-hidden="true">◆</span> हामी तपाईंको गोपनीयताको सम्मान गर्छौँ। कुनै स्प्याम छैन।</p>
+      <p className="trust-line"><span aria-hidden="true">◆</span> We respect your privacy. No spam.</p>
     </form>
   );
 }
@@ -75,7 +75,7 @@ function FormField({ label, name, placeholder, type = "text", error, optional = 
 }) {
   return (
     <label className="field">
-      <span>{label} {optional && <small>ऐच्छिक</small>}</span>
+      <span>{label} {optional && <small>Optional</small>}</span>
       <input
         aria-describedby={error ? `${name}-error` : undefined}
         aria-invalid={Boolean(error)}
