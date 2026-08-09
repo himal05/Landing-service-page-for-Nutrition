@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { CTAForm } from "../components/CTAForm";
+import { FlodeskForm } from "../components/FlodeskForm";
 import { Header } from "../components/Header";
 
 export const metadata: Metadata = {
@@ -139,7 +139,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <CTAForm />
+          <FlodeskForm />
         </div>
       </section>
     </main>
