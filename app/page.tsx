@@ -3,31 +3,31 @@ import { CTAForm } from "../components/CTAForm";
 import { Header } from "../components/Header";
 
 export const metadata: Metadata = {
-  title: "Free Nutrition & Supplement Consultation",
+  title: "निःशुल्क पोषण तथा सप्लिमेन्ट परामर्श",
   description:
-    "Get clear, personalized guidance for nutrition services, supplement recommendations, and business growth.",
+    "पोषण सेवा, सप्लिमेन्टसम्बन्धी सुझाव र व्यवसाय वृद्धिका लागि स्पष्ट तथा व्यक्तिगत मार्गदर्शन पाउनुहोस्।",
 };
 
 const benefits = [
-  "Understand which nutrition and supplement guidance fits your audience",
-  "Identify gaps in your current nutrition or supplement approach",
-  "Get practical next steps for your business",
-  "Improve confidence when discussing nutrition and supplements",
-  "Learn how to support clients while growing your service and supplement sales",
+  "तपाईंका ग्राहकका लागि कस्तो पोषण तथा सप्लिमेन्ट मार्गदर्शन उपयुक्त हुन्छ भन्ने बुझ्नुहोस्",
+  "अहिलेको पोषण वा सप्लिमेन्टसम्बन्धी योजनामा रहेका कमी पहिचान गर्नुहोस्",
+  "व्यवसायका लागि व्यावहारिक अगिल्ला कदमहरू पाउनुहोस्",
+  "पोषण र सप्लिमेन्टबारे छलफल गर्दा आफ्नो आत्मविश्वास बढाउनुहोस्",
+  "सेवा र सप्लिमेन्ट बिक्री बढाउँदै ग्राहकलाई राम्रो सहयोग गर्ने तरिका सिक्नुहोस्",
 ];
 
 const steps = [
   {
-    title: "Tell us about your business",
-    body: "Share who your clients are and the challenges you are facing.",
+    title: "आफ्नो व्यवसायबारे बताउनुहोस्",
+    body: "तपाईंका ग्राहक को हुन् र अहिले कस्ता चुनौती छन् भन्ने जानकारी दिनुहोस्।",
   },
   {
-    title: "Have a one-to-one discussion",
-    body: "Talk through nutrition, supplements, and your current business approach.",
+    title: "व्यक्तिगत छलफल गर्नुहोस्",
+    body: "पोषण, सप्लिमेन्ट र तपाईंको हालको व्यावसायिक योजनाबारे छलफल गर्नुहोस्।",
   },
   {
-    title: "Receive a customized strategy",
-    body: "Leave with practical next steps for your nutrition and supplement business.",
+    title: "आफ्नै आवश्यकताअनुसार रणनीति पाउनुहोस्",
+    body: "पोषण तथा सप्लिमेन्ट व्यवसायका लागि व्यावहारिक अगिल्ला कदमहरू लिएर जानुहोस्।",
   },
 ];
 
@@ -39,43 +39,43 @@ export default function Home() {
       <section className="hero section-shell" aria-labelledby="hero-title">
         <div className="hero-glow hero-glow-left" aria-hidden="true" />
         <div className="hero-glow hero-glow-right" aria-hidden="true" />
-        <div className="eyebrow"><span /> Free one-to-one consultation</div>
+        <div className="eyebrow"><span /> निःशुल्क व्यक्तिगत परामर्श</div>
         <h1 id="hero-title">
-          Get Clear Nutrition &amp; Supplement Guidance
-          <span>To Serve Clients Better And Grow Your Business</span>
+          पोषण तथा सप्लिमेन्टबारे स्पष्ट मार्गदर्शन पाउनुहोस्
+          <span>ग्राहकलाई अझ राम्रो सेवा दिनुहोस् र व्यवसाय बढाउनुहोस्</span>
         </h1>
         <p className="hero-subheadline">
-          Book a free consultation to understand what nutrition guidance,
-          supplement support, and practical strategy fit your clients and your business.
+          तपाईंका ग्राहक र व्यवसायका लागि उपयुक्त पोषण मार्गदर्शन,
+          सप्लिमेन्ट सहयोग र व्यावहारिक रणनीति बुझ्न निःशुल्क परामर्श बुक गर्नुहोस्।
         </p>
         <a className="button button-primary" href="#book-consultation">
-          Book Free Consultation <span aria-hidden="true">→</span>
+          निःशुल्क परामर्श बुक गर्नुहोस् <span aria-hidden="true">→</span>
         </a>
-        <p className="hero-note">Personalized guidance. Practical next steps. No obligation.</p>
+        <p className="hero-note">व्यक्तिगत मार्गदर्शन। व्यावहारिक अगिल्ला कदम। कुनै बाध्यता छैन।</p>
 
-        <div className="audience-card" aria-label="Who this consultation is for">
-          <p>This consultation is for</p>
+        <div className="audience-card" aria-label="यो परामर्श कसका लागि हो">
+          <p>यो परामर्श विशेष गरी</p>
           <div>
-            <span>Gym owners</span>
-            <span>Fitness coaches</span>
-            <span>Supplement sellers</span>
-            <span>Wellness businesses</span>
+            <span>जिम सञ्चालक</span>
+            <span>फिटनेस प्रशिक्षक</span>
+            <span>सप्लिमेन्ट विक्रेता</span>
+            <span>स्वास्थ्य व्यवसाय</span>
           </div>
         </div>
       </section>
 
       <section className="intro-section section-shell" aria-labelledby="clarity-title">
-        <div className="section-kicker">A clearer way forward</div>
+        <div className="section-kicker">अगाडि बढ्ने स्पष्ट बाटो</div>
         <div className="intro-grid">
-          <h2 id="clarity-title">Turn nutrition questions into <em>confident action.</em></h2>
+          <h2 id="clarity-title">पोषणसम्बन्धी प्रश्नलाई <em>आत्मविश्वासी कदममा बदल्नुहोस्।</em></h2>
           <div>
             <p>
-              Get clear, personalized guidance for nutrition services, supplement
-              recommendations, and business growth.
+              पोषण सेवा, सप्लिमेन्टसम्बन्धी सुझाव र व्यवसाय वृद्धिका लागि
+              स्पष्ट तथा व्यक्तिगत मार्गदर्शन पाउनुहोस्।
             </p>
             <p>
-              The conversation is shaped around your business, your clients, and
-              your current needs—so every recommendation has a practical purpose.
+              छलफल तपाईंको व्यवसाय, ग्राहक र हालको आवश्यकताअनुसार हुन्छ—ताकि
+              हरेक सुझाव व्यावहारिक र उपयोगी होस्।
             </p>
           </div>
         </div>
@@ -84,9 +84,9 @@ export default function Home() {
       <section className="benefits-section" aria-labelledby="benefits-title">
         <div className="section-shell">
           <div className="section-heading centered-heading">
-            <div className="section-kicker">Built around your goals</div>
-            <h2 id="benefits-title">How You Benefit From This Consultation</h2>
-            <p>Focused guidance to help you support clients and strengthen your business.</p>
+            <div className="section-kicker">तपाईंका लक्ष्यमा केन्द्रित</div>
+            <h2 id="benefits-title">यस परामर्शबाट तपाईंले पाउने फाइदा</h2>
+            <p>ग्राहकलाई सहयोग गर्न र व्यवसाय बलियो बनाउन केन्द्रित मार्गदर्शन।</p>
           </div>
           <div className="benefits-grid">
             {benefits.map((benefit, index) => (
@@ -101,9 +101,9 @@ export default function Home() {
 
       <section className="process-section section-shell" aria-labelledby="process-title">
         <div className="section-heading centered-heading">
-          <div className="section-kicker">Simple and focused</div>
-          <h2 id="process-title">Your Consultation Process</h2>
-          <p>Three clear steps from your current challenge to a practical strategy.</p>
+          <div className="section-kicker">सरल र केन्द्रित</div>
+          <h2 id="process-title">परामर्शको प्रक्रिया</h2>
+          <p>हालको चुनौतीदेखि व्यावहारिक रणनीतिसम्मका तीन स्पष्ट चरण।</p>
         </div>
         <div className="process-grid">
           {steps.map((step, index) => (
@@ -121,21 +121,20 @@ export default function Home() {
       <section className="booking-section" id="book-consultation" aria-labelledby="booking-title">
         <div className="section-shell booking-grid">
           <div className="booking-copy">
-            <div className="section-kicker light-kicker">Book the call</div>
-            <h2 id="booking-title">Make your next nutrition decision with clarity.</h2>
+            <div className="section-kicker light-kicker">परामर्श बुक गर्नुहोस्</div>
+            <h2 id="booking-title">आफ्नो अर्को पोषणसम्बन्धी निर्णय स्पष्टताका साथ लिनुहोस्।</h2>
             <p>
-              Get a focused one-to-one discussion based on your business, your clients,
-              and your current needs.
+              तपाईंको व्यवसाय, ग्राहक र हालको आवश्यकतामा आधारित केन्द्रित व्यक्तिगत छलफल पाउनुहोस्।
             </p>
 
             <div className="booking-points">
               <div>
                 <span aria-hidden="true">01</span>
-                <p><strong>One-to-One Consultation</strong> A focused discussion tailored to where you are now.</p>
+                <p><strong>व्यक्तिगत परामर्श</strong> तपाईंको हालको अवस्थाअनुसार केन्द्रित छलफल।</p>
               </div>
               <div>
                 <span aria-hidden="true">02</span>
-                <p><strong>Customized Strategy</strong> Clearer direction for nutrition guidance, supplement support, and business growth.</p>
+                <p><strong>आवश्यकताअनुसार रणनीति</strong> पोषण मार्गदर्शन, सप्लिमेन्ट सहयोग र व्यवसाय वृद्धिका लागि स्पष्ट दिशा।</p>
               </div>
             </div>
           </div>

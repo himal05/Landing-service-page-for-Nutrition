@@ -1,38 +1,35 @@
 import type { Metadata } from "next";
-import { Geist, Manrope } from "next/font/google";
+import { Noto_Sans_Devanagari } from "next/font/google";
 import "./globals.css";
 
-const manrope = Manrope({ variable: "--font-manrope", subsets: ["latin"] });
-const geist = Geist({ variable: "--font-geist", subsets: ["latin"] });
+const nepali = Noto_Sans_Devanagari({ variable: "--font-nepali", subsets: ["devanagari"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://nutrition-clarity-consultation.banjadehimal05.chatgpt.site"),
   title: {
-    default: "Nutrition Clarity | Free Consultation",
-    template: "%s | Nutrition Clarity",
+    default: "पोषण स्पष्टता | निःशुल्क परामर्श",
+    template: "%s | पोषण स्पष्टता",
   },
   description:
-    "Book a free consultation for clear nutrition, supplement, and practical business guidance.",
-  keywords: ["nutrition consultation", "supplement guidance", "fitness nutrition", "wellness business"],
+    "पोषण, सप्लिमेन्ट र व्यवसायसम्बन्धी स्पष्ट तथा व्यावहारिक मार्गदर्शनका लागि निःशुल्क परामर्श बुक गर्नुहोस्।",
+  keywords: ["पोषण परामर्श", "सप्लिमेन्ट मार्गदर्शन", "फिटनेस पोषण", "स्वास्थ्य व्यवसाय"],
   openGraph: {
-    title: "Clear Nutrition & Supplement Guidance",
-    description: "Book your free one-to-one consultation.",
+    title: "स्पष्ट पोषण तथा सप्लिमेन्ट मार्गदर्शन",
+    description: "निःशुल्क व्यक्तिगत परामर्श बुक गर्नुहोस्।",
     type: "website",
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Clear Nutrition and Supplement Guidance" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Clear Nutrition & Supplement Guidance",
-    description: "Book your free one-to-one consultation.",
-    images: ["/og.png"],
+    title: "स्पष्ट पोषण तथा सप्लिमेन्ट मार्गदर्शन",
+    description: "निःशुल्क व्यक्तिगत परामर्श बुक गर्नुहोस्।",
   },
   icons: { icon: "/favicon.svg" },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <body className={`${manrope.variable} ${geist.variable}`}>{children}</body>
+    <html lang="ne">
+      <body className={nepali.variable}>{children}</body>
     </html>
   );
 }
