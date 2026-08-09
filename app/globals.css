@@ -22,6 +22,8 @@ body {
   font-family: var(--font-geist), Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+.nepali-page { font-family: "Nirmala UI", "Noto Sans Devanagari", var(--font-geist), sans-serif; }
+.nepali-page h1, .nepali-page h2, .nepali-page h3, .nepali-page .brand-type strong { letter-spacing: -.5px; line-height: 1.25; }
 button, input, textarea { font: inherit; }
 a { color: inherit; text-decoration: none; }
 
