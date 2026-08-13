@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
-const FORM_ID = "6a7865bcf6a3ec722d645de6";
+const FORM_ID = "6a7d3d4d1adbc38d7019ebbe";
 const ROOT_SELECTOR = `.ff-${FORM_ID}`;
 
 type FlodeskWindow = Window & {
@@ -33,6 +33,8 @@ export function FlodeskForm() {
         const config = documentFragment.querySelector<HTMLElement>("[data-ff-el='config']");
         if (config?.dataset.ffConfig) {
           const decoded = JSON.parse(atob(config.dataset.ffConfig));
+          // Flodesk still owns submission and automation. Its success stage is
+          // the confirmation used for the delayed redirect below.
           decoded.onSuccess = { ...decoded.onSuccess, mode: "message", redirectUrl: "" };
           config.dataset.ffConfig = btoa(JSON.stringify(decoded));
         }
