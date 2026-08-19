@@ -154,6 +154,15 @@ a { color: inherit; text-decoration: none; }
 .success-mark { display: grid; place-items: center; width: 62px; height: 62px; border-radius: 50%; margin: 0 auto 22px; color: white; background: var(--green); box-shadow: 0 0 0 10px #e1f1e5; font-size: 26px; }
 .thank-you-hero h1 { max-width: 840px; margin: 14px auto 17px; color: var(--green-ink); font-size: clamp(40px, 5.5vw, 65px); line-height: 1.06; }
 .thank-you-hero p { color: var(--muted); font-size: 18px; }
+.ebook-card { display: grid; grid-template-columns: 280px 1fr; gap: 54px; align-items: center; margin-bottom: 36px; padding: 34px; border: 1px solid var(--line); border-radius: 24px; background: linear-gradient(135deg, #f5fbf7, #ecfaf7); box-shadow: 0 24px 70px rgba(18,55,42,.08); }
+.ebook-cover { min-height: 355px; padding: 32px 27px; display: flex; flex-direction: column; justify-content: space-between; border-radius: 16px; color: white; background: radial-gradient(circle at 95% 5%, rgba(20,184,166,.28), transparent 38%), linear-gradient(145deg, #0f522f, #082d1c); box-shadow: 0 22px 38px rgba(8,45,28,.24); }
+.ebook-cover span { color: #8ce6d8; font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; }
+.ebook-cover strong { font-family: var(--font-manrope), sans-serif; font-size: 34px; line-height: 1.04; letter-spacing: -1.5px; }
+.ebook-cover small { color: #cce7d8; font-size: 11px; line-height: 1.5; }
+.ebook-copy h2 { max-width: 620px; margin: 12px 0 15px; color: var(--green-ink); font-family: var(--font-manrope), sans-serif; font-size: clamp(32px, 4vw, 46px); line-height: 1.1; letter-spacing: -2px; }
+.ebook-copy p { max-width: 650px; margin: 0 0 24px; color: var(--muted); font-size: 17px; line-height: 1.7; }
+.ebook-copy > small { display: block; margin-top: 13px; color: var(--muted); }
+.ebook-button { display: inline-flex; width: auto; gap: 10px; }
 .next-steps { display: grid; grid-template-columns: .9fr 1.1fr; gap: 65px; align-items: center; padding: 54px; border: 1px solid var(--line); border-radius: 24px; background: white; box-shadow: 0 24px 70px rgba(18,55,42,.08); }
 .next-steps h2 { color: var(--green-ink); font-size: clamp(32px, 4vw, 45px); margin: 12px 0 14px; }
 .next-steps p, .next-steps li { color: var(--muted); line-height: 1.65; }
@@ -173,7 +182,9 @@ a { color: inherit; text-decoration: none; }
   .hero h1 { letter-spacing: -2.5px; }
   .audience-card { flex-direction: column; align-items: flex-start; margin-top: 52px; }
   .intro-section, .benefits-section, .process-section, .booking-section { padding-block: 78px; }
-  .intro-grid, .booking-grid, .next-steps, .prepare-card { grid-template-columns: 1fr; gap: 34px; }
+  .intro-grid, .booking-grid, .ebook-card, .next-steps, .prepare-card { grid-template-columns: 1fr; gap: 34px; }
+  .ebook-card { padding: 34px; }
+  .ebook-cover { width: min(100%, 300px); min-height: 380px; }
   .benefits-grid { grid-template-columns: 1fr 1fr; }
   .benefit-card, .benefit-card:nth-child(4), .benefit-card-wide { grid-column: span 1; }
   .benefit-card-wide { grid-column: 1 / -1; }
@@ -203,6 +214,10 @@ a { color: inherit; text-decoration: none; }
   .field-full { grid-column: auto; }
   .consultation-form { padding: 24px 18px; border-radius: 18px; }
   .booking-grid { width: min(100% - 24px, 680px); }
+  .ebook-card { width: min(100% - 24px, 680px); padding: 22px; }
+  .ebook-cover { width: 100%; min-height: 330px; }
+  .ebook-copy h2 { letter-spacing: -1.4px; }
+  .ebook-button { width: 100%; }
   .next-steps { width: min(100% - 24px, 680px); padding: 28px 20px; }
   .prepare-card { width: min(100% - 24px, 680px); padding: 29px 22px; }
 }

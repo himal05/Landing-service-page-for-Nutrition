@@ -17,6 +17,26 @@ export default function ThankYouPage() {
         <p>You’re one step closer to getting clear nutrition and supplement guidance.</p>
       </section>
 
+      <section className="ebook-card section-shell" aria-labelledby="ebook-title">
+        <div className="ebook-cover" aria-hidden="true">
+          <span>Free practical guide</span>
+          <strong>Nutrition &amp;<br />Supplement<br />Clarity</strong>
+          <small>Healthy eating · Fitness · Healthy aging</small>
+        </div>
+        <div className="ebook-copy">
+          <div className="section-kicker">Your free ebook</div>
+          <h2 id="ebook-title">Start making clearer nutrition decisions today.</h2>
+          <p>
+            Download this practical 10-page guide to meal building, fitness nutrition,
+            healthy aging, and safer supplement choices.
+          </p>
+          <a className="button ebook-button" href="/ebook.pdf" download>
+            Download Your Free Ebook <span aria-hidden="true">↓</span>
+          </a>
+          <small>PDF · 10 pages · Free download</small>
+        </div>
+      </section>
+
       <section className="next-steps section-shell" aria-labelledby="video-title">
         <div className="video-copy">
           <div className="section-kicker">Before you leave</div>
