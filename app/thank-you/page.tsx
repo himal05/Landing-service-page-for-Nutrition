@@ -50,10 +50,39 @@ export default function ThankYouPage() {
             <li>How to prepare for your one-to-one consultation</li>
           </ul>
         </div>
-        <div className="video-placeholder" role="img" aria-label="Consultation introduction video placeholder">
-          <span className="play-button" aria-hidden="true">▶</span>
-          <p>Your consultation video will appear here</p>
+        <div className="video-area">
+          <video className="consultation-video" controls preload="metadata" playsInline>
+            <source src="/nutrition-consultation-video.mp4" type="video/mp4" />
+            Your browser does not support the video player.
+          </video>
+          <a
+            className="shared-video-link"
+            href="https://chatgpt.com/s/m_6a806789899c819186c0c62d41ce9400"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Open the shared video link <span aria-hidden="true">↗</span>
+          </a>
         </div>
+      </section>
+
+      <section className="whatsapp-card section-shell" aria-labelledby="whatsapp-title">
+        <div>
+          <div className="section-kicker light-kicker">Have a question?</div>
+          <h2 id="whatsapp-title">Message me directly on WhatsApp.</h2>
+          <p>
+            Ask about your nutrition goals, healthy eating, fitness nutrition,
+            dietary supplements, or your upcoming consultation.
+          </p>
+        </div>
+        <a
+          className="whatsapp-button"
+          href="https://wa.me/9779841618597?text=Hello%2C%20I%20just%20submitted%20the%20free%20nutrition%20consultation%20form.%20I%20would%20like%20to%20know%20more%20about%20the%20consultation%20and%20nutrition%20services."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Message Me on WhatsApp <span aria-hidden="true">→</span>
+        </a>
       </section>
 
       <section className="prepare-card section-shell">
